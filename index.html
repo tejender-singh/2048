@@ -14,8 +14,7 @@
     <title>2048</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./2048.js"></script>
-    <!-- <style src="./2048.css"></style> -->
-    <link rel="stylesheet" href="2048.css">
+    <link rel="stylesheet" href="2048.css" />
   </head>
   <body ontouchstart="touchDown(event)" ontouchend="touchUp(event)">
     <div class="grid text-center row">
@@ -31,45 +30,44 @@
     </div>
 
     <div class="grid text-center table-row">
-        <!-- <div class="g-col-1 g-col-md-4"></div> -->
-        <div class="g-col-10 g-col-md-5 g-start-2 g-start-md-5 container">
-            <div class="grid text-center table-row">
-                <div class="g-col-12">
-                    <button type="button" class="btn btn-lg mybutton" id="0,0"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="0,1"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="0,2"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="0,3"></button>
-                </div>
-              </div>
-              <div class="grid text-center table-row">
-                <div class="g-col-12">
-                    <button type="button" class="btn btn-lg mybutton" id="1,0"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="1,1"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="1,2"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="1,3"></button>
-                </div>
-              </div>
-              <div class="grid text-center table-row">
-                <div class="g-col-12">
-                    <button type="button" class="btn btn-lg mybutton" id="2,0"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="2,1"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="2,2"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="2,3"></button>
-                </div>
-              </div>
-              <div class="grid text-center table-row">
-                <div class="g-col-12">
-                    <button type="button" class="btn btn-lg mybutton" id="3,0"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="3,1"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="3,2"></button>
-                    <button type="button" class="btn btn-lg mybutton" id="3,3"></button>
-                </div>
-              </div>
-                        </div>
-        <!-- <div class="g-col-1 g-col-md-4"></div> -->
+      <div class="g-col-10 g-col-md-5 g-start-2 g-start-md-5 container">
+        <div class="grid text-center table-row">
+          <div class="g-col-12">
+            <button type="button" class="btn btn-lg mybutton" id="0,0"></button>
+            <button type="button" class="btn btn-lg mybutton" id="0,1"></button>
+            <button type="button" class="btn btn-lg mybutton" id="0,2"></button>
+            <button type="button" class="btn btn-lg mybutton" id="0,3"></button>
+          </div>
+        </div>
+        <div class="grid text-center table-row">
+          <div class="g-col-12">
+            <button type="button" class="btn btn-lg mybutton" id="1,0"></button>
+            <button type="button" class="btn btn-lg mybutton" id="1,1"></button>
+            <button type="button" class="btn btn-lg mybutton" id="1,2"></button>
+            <button type="button" class="btn btn-lg mybutton" id="1,3"></button>
+          </div>
+        </div>
+        <div class="grid text-center table-row">
+          <div class="g-col-12">
+            <button type="button" class="btn btn-lg mybutton" id="2,0"></button>
+            <button type="button" class="btn btn-lg mybutton" id="2,1"></button>
+            <button type="button" class="btn btn-lg mybutton" id="2,2"></button>
+            <button type="button" class="btn btn-lg mybutton" id="2,3"></button>
+          </div>
+        </div>
+        <div class="grid text-center table-row">
+          <div class="g-col-12">
+            <button type="button" class="btn btn-lg mybutton" id="3,0"></button>
+            <button type="button" class="btn btn-lg mybutton" id="3,1"></button>
+            <button type="button" class="btn btn-lg mybutton" id="3,2"></button>
+            <button type="button" class="btn btn-lg mybutton" id="3,3"></button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="g-col-1 g-col-md-4"></div> -->
     </div>
-  
-<script>
+
+    <script>
       refreshArrayOnPage(arr);
 
       document.addEventListener("keydown", (event) => {
@@ -95,7 +93,6 @@
         }
         if (!compareArrays(arrCopy, arr)) {
           insertRandomNumberAtEmptySpace(arr);
-          // insertRandomNumberAtEmptySpace(arr);
           refreshArrayOnPage(arr);
         }
       });
