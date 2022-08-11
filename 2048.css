@@ -18,6 +18,7 @@ body {
   background-color: #faf8ef;
   max-width: 99%;
   color: #776e65;
+  overscroll-behaviour: contain;
 }
 .container {
   background-color: #bbada0;
